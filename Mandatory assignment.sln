@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightConverterLib", "Mandatory assignment\WeightConverterLib.csproj", "{9F98D8F3-2B25-4B61-926C-2BACF4C3D7F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeightConverterLib", "Mandatory assignment\WeightConverterLib.csproj", "{9F98D8F3-2B25-4B61-926C-2BACF4C3D7F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting", "Converter\UnitTesting.csproj", "{497FC584-1FAD-4C0C-87BD-C96218BCD604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP Server", "Server\TCP Server.csproj", "{A117F040-BD00-4E51-B643-AD9A642634C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{CC3EFAAC-37DD-4110-AE33-560308CB55CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{9F98D8F3-2B25-4B61-926C-2BACF4C3D7F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F98D8F3-2B25-4B61-926C-2BACF4C3D7F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F98D8F3-2B25-4B61-926C-2BACF4C3D7F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{497FC584-1FAD-4C0C-87BD-C96218BCD604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{497FC584-1FAD-4C0C-87BD-C96218BCD604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{497FC584-1FAD-4C0C-87BD-C96218BCD604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{497FC584-1FAD-4C0C-87BD-C96218BCD604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A117F040-BD00-4E51-B643-AD9A642634C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A117F040-BD00-4E51-B643-AD9A642634C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A117F040-BD00-4E51-B643-AD9A642634C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A117F040-BD00-4E51-B643-AD9A642634C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3EFAAC-37DD-4110-AE33-560308CB55CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3EFAAC-37DD-4110-AE33-560308CB55CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3EFAAC-37DD-4110-AE33-560308CB55CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3EFAAC-37DD-4110-AE33-560308CB55CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
