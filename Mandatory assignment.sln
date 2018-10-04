@@ -5,11 +5,17 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeightConverterLib", "Mandatory assignment\WeightConverterLib.csproj", "{9F98D8F3-2B25-4B61-926C-2BACF4C3D7F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting", "Converter\UnitTesting.csproj", "{497FC584-1FAD-4C0C-87BD-C96218BCD604}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTesting", "Converter\UnitTesting.csproj", "{497FC584-1FAD-4C0C-87BD-C96218BCD604}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP Server", "Server\TCP Server.csproj", "{A117F040-BD00-4E51-B643-AD9A642634C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCP Server", "Server\TCP Server.csproj", "{A117F040-BD00-4E51-B643-AD9A642634C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{CC3EFAAC-37DD-4110-AE33-560308CB55CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{CC3EFAAC-37DD-4110-AE33-560308CB55CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TCP", "TCP", "{92EAEA92-699A-4C08-9864-D07FE68CF8B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unittest", "Unittest", "{1BD9D8C6-9FFA-4FE5-9C33-D09BB8943FBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{22B40098-3184-494D-844F-C878B6F19EEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +42,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F98D8F3-2B25-4B61-926C-2BACF4C3D7F1} = {22B40098-3184-494D-844F-C878B6F19EEA}
+		{497FC584-1FAD-4C0C-87BD-C96218BCD604} = {1BD9D8C6-9FFA-4FE5-9C33-D09BB8943FBC}
+		{A117F040-BD00-4E51-B643-AD9A642634C9} = {92EAEA92-699A-4C08-9864-D07FE68CF8B4}
+		{CC3EFAAC-37DD-4110-AE33-560308CB55CF} = {92EAEA92-699A-4C08-9864-D07FE68CF8B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6083EB3A-8E29-4444-AEB6-A09B46797D23}
