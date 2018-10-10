@@ -5,20 +5,20 @@ using System.Net.Sockets;
 using System.Threading.Tasks;
 using Mandatory_assignment;
 
-namespace Server
+namespace TCPServer
 {
-    internal class Server
+    public class Server
     {
-        private readonly int PORT;
+        private int _port;
 
         public Server(int port)
         {
-            this.PORT = port;
+            _port = port;
         }
 
         public void Start()
         {
-            var serverListener = new TcpListener(IPAddress.Loopback, PORT);
+            var serverListener = new TcpListener(IPAddress.Loopback, _port);
             serverListener.Start();
             while (true)
             {
@@ -43,17 +43,17 @@ namespace Server
 
                 string convertOption = incStrings[0].ToUpper();
 
-                if (convertOption == "TOGRAM")
+                if (convertOption == "togram")
                 {
                     double weight = double.Parse(incStrings[1]);
                     double result = Converterdll.Ounces2Grams(weight);
-                    sw.Write(result + "\n");
+                    sw.Write(result);
                 }
                 else
                 {
                     double weight = double.Parse(incStrings[1]);
                     double result = Converterdll.Grams2Ounces(weight);
-                    sw.Write(result + "\n");
+                    sw.Write(result);
                 }
             }
         }

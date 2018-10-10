@@ -6,7 +6,7 @@ namespace TCPServer
     {
          static void Main(string[] args)
          {
-             var server = new Server.Server(2000);
+             var server = new Server(4000);
              server.Start();
              Console.ReadKey();
         }
