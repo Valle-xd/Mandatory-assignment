@@ -43,17 +43,17 @@ namespace TCPServer
 
                 string convertOption = incStrings[0].ToUpper();
 
-                if (convertOption == "togram")
+                if (convertOption == "TOGRAM")
                 {
                     double weight = double.Parse(incStrings[1]);
                     double result = Converterdll.Ounces2Grams(weight);
-                    sw.Write(result);
+                    sw.WriteLine(result);
                 }
                 else
                 {
                     double weight = double.Parse(incStrings[1]);
                     double result = Converterdll.Grams2Ounces(weight);
-                    sw.Write(result);
+                    sw.WriteLine(result);
                 }
             }
         }

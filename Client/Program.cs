@@ -9,7 +9,7 @@ namespace Client
         static void Main(string[] args)
         {
             Console.WriteLine("TOGRAM/TOOUNCES <value>");
-            var client = new Client(2000);
+            var client = new Client(5000);
             client.Start();
             Console.ReadKey();
         }
