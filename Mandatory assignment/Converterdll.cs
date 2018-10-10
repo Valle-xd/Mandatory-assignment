@@ -18,6 +18,6 @@ namespace Mandatory_assignment
         public static double Grams2Ounces(double grams)
         {
             return grams * Grams;
-        }
+        } 
     }
 }

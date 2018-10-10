@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
+using Mandatory_assignment;
 
 namespace Server
 {
@@ -34,9 +35,25 @@ namespace Server
                 var sr = new StreamReader(ns);
                 var sw = new StreamWriter(ns);
                 sw.Flush();
+
                 string[] incStrings;
                 {
                     incStrings = sr.ReadLine().Split(' ');
+                }
+
+                string convertOption = incStrings[0].ToUpper();
+
+                if (convertOption == "TOGRAM")
+                {
+                    double weight = double.Parse(incStrings[1]);
+                    double result = Converterdll.Ounces2Grams(weight);
+                    sw.Write(result + "\n");
+                }
+                else
+                {
+                    double weight = double.Parse(incStrings[1]);
+                    double result = Converterdll.Grams2Ounces(weight);
+                    sw.Write(result + "\n");
                 }
             }
         }
