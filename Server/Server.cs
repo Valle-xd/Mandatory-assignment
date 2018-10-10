@@ -34,12 +34,10 @@ namespace TCPServer
                 var ns = client.GetStream();
                 var sr = new StreamReader(ns);
                 var sw = new StreamWriter(ns);
-                sw.Flush();
+                sw.AutoFlush = true;
 
-                string[] incStrings;
-                {
-                    incStrings = sr.ReadLine().Split(' ');
-                }
+                string[] incStrings = sr.ReadLine().Split(' ');
+
 
                 string convertOption = incStrings[0].ToUpper();
 

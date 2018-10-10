@@ -23,7 +23,7 @@ namespace Client
                 var ns = client.GetStream();
                 var sr = new StreamReader(ns);
                 var sw = new StreamWriter(ns);
-                sw.Flush();
+                sw.AutoFlush = true;
 
                 sw.WriteLine(Console.ReadLine());
                 Console.WriteLine(sr.ReadLine());
